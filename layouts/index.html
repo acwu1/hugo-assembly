@@ -14,16 +14,17 @@
 
 	{{ partial "banner.html" . }}
 </div>
-<div id="wrapper">
-	{{ if .Site.Params.services.enable }}
-	{{ partial "services.html" . }}
-	{{ end }}
-</div>
 <div id="welcome">
 	{{ if .Site.Params.welcome.enable }}
 	{{ partial "hero.html" . }}
 	{{ end }}
 </div>
+<div id="wrapper">
+	{{ if .Site.Params.projects.enable }}
+	{{ partial "projects.html" . }}
+	{{ end }}
+</div>
+
 	{{ if .Site.Params.footer.enable }}
 	{{ partial "footer.html" .}}
 	{{ end }}
